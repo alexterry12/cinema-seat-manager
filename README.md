@@ -1,5 +1,45 @@
 # Hello World with Typescript
 
+## Cinema Seat Manager
+
+A terminal tool for the box office of a small cinema: see which of the 80 seats (8 rows of 10) are taken, book a seat for a customer, and find two free seats together.
+
+The code lives in three files:
+
+- `src/seats.ts`: the five seat functions (create the room, show it, book a seat, count seats, find two together).
+- `src/main.ts`: the box office menu that the staff use.
+- `src/tests.ts`: four example rooms that check the functions.
+
+### Run the box office
+
+```bash
+npm run console
+```
+
+The room is shown and a numbered menu appears. Type a number and press Enter:
+
+1. Show the room
+2. Book a seat (you are then asked for a row 0 to 7 and a seat 0 to 9)
+3. Show the counts
+4. Find two seats together
+5. Quit
+
+Free seats show as `L`, taken seats as `X`. The room only lasts while the program is running.
+
+### Run the tests
+
+```bash
+npm run tests
+```
+
+This prints four rooms (empty, partly filled, nearly full, full) with their counts and the result of the two-seats search.
+
+To check the TypeScript types without running anything:
+
+```bash
+npm run typecheck
+```
+
 <!-- hide -->
 > By [@ehiber](https://github.com/ehiber) and contributors at [4Geeks Academy](https://4geeksacademy.com/)
 
